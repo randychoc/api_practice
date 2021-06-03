@@ -1,5 +1,7 @@
-exports.getItems = (req, res) => {
+getItems = (req, res) => {
   res.send({
     data: "Esto viene desde ITEMS",
   });
 };
+
+module.exports = { getItems };
