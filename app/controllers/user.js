@@ -1,7 +1,22 @@
+const model = require("../models/user");
+
 getData = (req, res) => {
-  res.send({
-    data: "Esto viene desde USER",
+  model.find({}, (err, docs) => {
+    res.send({
+      docs,
+    });
   });
 };
 
-module.exports = { getData };
+postData = (req, res) => {
+  const data = req.body;
+  model.create(data, (err, docs) => {
+    if (err) {
+      res.status(422).send({ error: "Error" });
+    } else {
+      res.send({ data: docs });
+    }
+  });
+};
+
+module.exports = { getData, postData };

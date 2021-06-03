@@ -5,6 +5,19 @@ const userRouter = require("./app/routes/user");
 const itemsRouter = require("./app/routes/items");
 const initDB = require("./config/db");
 
+//for parsing json
+app.use(
+  express.json({
+    limit: "20mb",
+  })
+);
+// for parsing application/x-www-form-urlencoded
+app.use(
+  express.urlencoded({
+    limit: "20mb",
+    extended: true,
+  })
+);
 //path
 app.use(userRouter);
 app.use(itemsRouter);
