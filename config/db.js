@@ -9,6 +9,7 @@ module.exports = () => {
         keepAlive: true,
         useNewUrlParser: true,
         useUnifiedTopology: true,
+        useCreateIndex: true,
       },
       (err) => {
         if (err) {

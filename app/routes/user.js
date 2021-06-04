@@ -5,6 +5,9 @@ const controller = require("../controllers/user");
 const path = "user";
 
 router.get(`/${path}`, controller.getData);
-router.post(`/${path}`, controller.postData);
+router.get(`/${path}/:id`, controller.getOneData);
+router.post(`/${path}`, controller.postOneData);
+router.put(`/${path}/:id`, controller.putOneData);
+router.delete(`/${path}/:id`, controller.deleteOneData);
 
 module.exports = router;
