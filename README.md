@@ -40,9 +40,9 @@ npm start
     - `npm i body-parser -S`
     - Since Express 4.16.0 we can use `express.urlencoded({extended: true})` and `express.json()` instead of `bodyParser.urlencoded({extended: true})` and `bodyParser.json()`
     - Noted: Is not necessary to install Body-Parser. 
-    - Use of the Postman Tool for requests. [https://www.postman.com/downloads/](https://www.postman.com/downloads/)
+    - Use of the Postman Tool for requests. Download [Postman](https://www.postman.com/downloads/)
 5) put, delete
-    - 
+    - Use MongoDB Compass (GUI) to explore, analyze, and interact with the content store in MongoDB database. 
 
 <!-- ## Live URL -->
 <!-- [react](https://reactjs.org/) -->
